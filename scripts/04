@@ -1,0 +1,11 @@
+#!/bin/bash
+if [[ ! /tmp/crontab ]];
+	then
+	cp -R /etc/crontab /tmp/crontab
+elif [[ /etc/crontab != /tmp/crontab ]];
+	then
+	cp -R /etc/crontab /tmp/crontab_tmp
+	mail -s 'crontab modification' root@localhost
+fi
+
+mail -s "cron modification" root@localhost

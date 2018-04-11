@@ -1,0 +1,16 @@
+ ## A la commande :
+
+ nslookup 10.51.1.253
+
+ ## on obtient la reponse :
+
+Server:10.51.1.42
+Address:10.51.1.42#53
+
+Non-authoritative answer:
+2			53.1.51.10.in-addr.arpaname = dhcp.42.fr.
+
+Authoritative answers can b	e found from:
+
+ ## Du coup le type de serveur est indique : dhcp
+ On aurait pu aussi lancer la commande dig -x 10.51.1.253

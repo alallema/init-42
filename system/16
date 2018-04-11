@@ -1,0 +1,1 @@
+cron est le gestionnaire des tâches devant être exécutées à un moment précis, il permet de lancer des tâches à horaires régulières.

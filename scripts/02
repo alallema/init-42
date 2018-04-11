@@ -1,0 +1,6 @@
+#!/bin/bash
+apt-get update -y >> /var/log/update_script.log
+apt-get upgrade -y >> /var/log/update_script.log
+
+# On cree une tache en lancant la commande crontab -e
+# a la fin on ajoute : 0 4 * * 0 sh path/to/script/script_name
